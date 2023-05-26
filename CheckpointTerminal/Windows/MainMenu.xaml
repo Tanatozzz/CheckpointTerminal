@@ -67,7 +67,7 @@
                                        FontSize="14" Margin="10" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"/>
 
                             <!-- Select Button -->
-                            <Button Content="Выбрать" HorizontalAlignment="Center" 
+                            <Button Name="ChooseButton" Content="Выбрать" HorizontalAlignment="Center" 
                                     VerticalAlignment="Bottom" Margin="10" Grid.Row="4" Grid.Column="1"
                                     Click="Button_Click"/>
                         </Grid>

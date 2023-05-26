@@ -41,12 +41,16 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="QRCoder, Version=1.4.3.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.4.3\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
       <Private>True</Private>
@@ -137,13 +141,15 @@
     <Compile Include="Classes\UpdateData.cs" />
     <Compile Include="Converters\BoolToStatusConverter.cs" />
     <Compile Include="Models\CheckpointWithOfficeName.cs" />
-    <Compile Include="Models\EmployeeWithRoleName.cs" />
     <Compile Include="Models\HttpEmployee.cs" />
     <Compile Include="Singletons\AllCheckpointSingleton.cs" />
     <Compile Include="Singletons\AllEmployeeSingleton.cs" />
     <Compile Include="Singletons\EmployeeSingleton.cs" />
     <Compile Include="Windows\MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\QRCodeWindow.xaml.cs">
+      <DependentUpon>QRCodeWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="Windows\LoginWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -159,6 +165,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Windows\MainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\QRCodeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

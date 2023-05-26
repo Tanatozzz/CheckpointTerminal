@@ -42,7 +42,6 @@ namespace CheckpointTerminal.Classes
                     // Данные не загружены или обновлены
                     return false;
                 }
-                return true;
             }
             catch (Exception ex)
             {
@@ -51,8 +50,6 @@ namespace CheckpointTerminal.Classes
                 return false;
                 // Дополнительные действия по обработке ошибки...
             }
-
-            return false; // Данные не загружены или обновлены
         }
     }
 }

@@ -39,6 +39,12 @@ namespace CheckpointTerminal.Windows
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (sender is Button ChooseButton && ChooseButton.DataContext is Checkpointt selectedcheckpoint)
+            {
+                var QRCode = new QRCodeWindow(selectedcheckpoint);
+                QRCode.Show();
+                this.Close();
+            }
 
         }
     }
