@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:CheckpointTerminal.Windows"
         xmlns:converters="clr-namespace:CheckpointTerminal.Converters"
         mc:Ignorable="d"
-        Title="QRCodeWindow" Height="600" Width="300">
+        Title="QRCodeWindow" Height="500" Width="300" WindowStartupLocation="CenterScreen"
+        WindowStyle="None" 
+        ResizeMode="NoResize">
     <Window.Resources>
         <converters:BoolToStatusConverter x:Key="BoolToStatusConverter"/>
     </Window.Resources>

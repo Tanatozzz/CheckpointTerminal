@@ -141,6 +141,7 @@
     <Compile Include="Classes\UpdateData.cs" />
     <Compile Include="Converters\BoolToStatusConverter.cs" />
     <Compile Include="Models\CheckpointWithOfficeName.cs" />
+    <Compile Include="Models\EmployeeWithRoleName.cs" />
     <Compile Include="Models\HttpEmployee.cs" />
     <Compile Include="Singletons\AllCheckpointSingleton.cs" />
     <Compile Include="Singletons\AllEmployeeSingleton.cs" />

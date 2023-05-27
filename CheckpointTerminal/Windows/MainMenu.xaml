@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CheckpointTerminal.Windows"
         xmlns:converters="clr-namespace:CheckpointTerminal.Converters"
         mc:Ignorable="d"
-        Title="MainMenu" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Выбор прохода" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <converters:BoolToStatusConverter x:Key="BoolToStatusConverter"/>
     </Window.Resources>

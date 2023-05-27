@@ -36,7 +36,7 @@ namespace CheckpointTerminal.Windows
             StartTimer();
             IDTextBlock.Text = check.ID.ToString();
             TitleTextBlock.Text = check.Title.ToString();
-            IDOfficeTextBlock.Text = checkTitleOffice.OfficeTitle.ToString();
+            IDOfficeTextBlock.Text = checkTitleOffice.IDOffice.ToString();
             if (check.IsActive == true)
             {
                 IsActiveTextBlock.Text = "Активен";
