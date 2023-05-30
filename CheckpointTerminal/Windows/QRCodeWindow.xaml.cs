@@ -66,7 +66,7 @@ namespace CheckpointTerminal.Windows
             bool isActive = check.IsActive;
 
             // Формируем информацию о проходе с текущей датой и временем
-            string passageInfo = $"ID: {id}\nTitle: {title}\nIDOffice: {officeID}\nIsActive: {isActive}\nDateTime: {DateTime.Now}";
+            string passageInfo = $"ID:{id}\nTitle:{title}\nIDOffice:{officeID}\nIsActive:{isActive}\nDateTime:{DateTime.Now}";
 
             // Создаем экземпляр генератора QR-кода
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
