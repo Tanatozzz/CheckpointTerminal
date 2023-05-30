@@ -21,7 +21,7 @@ namespace CheckpointTerminal.Http
         public HttpQuery()
         {
             _httpClient = new HttpClient();
-            _httpClient.BaseAddress = new Uri("https://localhost:7213/api/DataBase/");
+            _httpClient.BaseAddress = new Uri("http://94.228.124.99:12345/api/DataBase/");
         }
 
         public async Task<HttpEmployee> Login(string username, string password)
